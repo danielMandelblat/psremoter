@@ -1,2 +1,2 @@
 # psremoter
-Powershell remote client for Python
+Powershell remote client tool for Python
