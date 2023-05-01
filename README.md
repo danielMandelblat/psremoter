@@ -1,5 +1,5 @@
 # PSRemoteExecuter
-## _Suitable only for Windows platforms_
+## _Suitable for Windows and Linux platforms_
 
 This package will help you to execute remote PowerSell script on other Windows platforms in your domain. 
 
@@ -11,12 +11,12 @@ This package will help you to execute remote PowerSell script on other Windows p
 
 ##Using
 install PSRemoter using pip:<br>
-pip install PSRemoter
+pip install psremoter
 
 powershell=False (default) execute as batch script
 ```
-from psremoter.connector import Execute
-exec= Execute(hostname="hostname", username="username" , password='password', domain='myDomain', command="hostname", powershell=True)
+from psremoter import psremoter
+exec= psremoter(hostname="hostname", username="username" , password='password', domain='myDomain', command="hostname", powershell=True)
 
 #Execute command on remote host
 exec.remote_execution()
